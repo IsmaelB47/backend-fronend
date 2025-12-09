@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Song</title>
+    <script src="scripts/add_song.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">All songs</a>
+        <a href="add_song.html">Add songs</a>
+    </nav>
+
+    <h1>Add a Song</h1>
+    <form id="addSongForm">
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="text" name="artist" placeholder="Artist" required>
+        <input type="number" name="popularity" placeholder="Popularity" min="1" max="10">
+        <button type="submit">Add Song</button>
+    </form>
+</body>
+</html>

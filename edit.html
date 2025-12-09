@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Song</title>
+  <script src="scripts/edit.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">All Songs</a>
+    <a href="add_song.html">Add Songs</a>
+  </nav>
+
+  <h1>Songs</h1>
+
+  <form id="editForm">
+    <input type="hidden" id="songId" />
+
+    <div>
+      <label for="title">Title</label><br/>
+      <input type="text" id="title" required />
+    </div>
+
+    <div>
+      <label for="artist">Artist</label><br/>
+      <input type="text" id="artist" required />
+    </div>
+
+    <div>
+      <label for="released">Released</label><br/>
+      <input type="date" id="released" />
+    </div>
+
+    <div>
+      <label for="popularity">Popularity</label><br/>
+      <input type="number" id="popularity" min="0" />
+    </div>
+
+    <div>
+      <label for="genre">Genre</label><br/>
+      <input type="text" id="genre" />
+    </div>
+
+    <button type="submit" id="updateBtn">Update Song</button>
+  </form>
+</body>
+</html>
